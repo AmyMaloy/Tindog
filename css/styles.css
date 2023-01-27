@@ -63,16 +63,16 @@ p {
       /* Title Image */
 
       .title-image {
-         width: 16%; /* was 60% i decreased the percentage so it could fit my screen.*/
+         width: 20%;
          transform: rotate(25deg);
          position: absolute;
-         right: 20%;
+         right: 30%;
       }
 
        /* Features Section */
 
        #features {
-        padding: 7% 15%;
+        padding: 3% 15%;
         background-color: #fff;
         position: relative;
         
@@ -92,23 +92,25 @@ p {
         color:#ff4c68;
        }
 
-       /* Testimonial Section */    /*Needs an ajustment only 1 testimonial apears on scroll*/
+       /* Testimonial Section */    
 
        #testimonials {
         text-align: center;
-        background-color: #ef8172;    
+        background-color: #ef8172;
         color: #fff;
-       }
-
-      .testimonial-image {
+    }
+    
+    .testimonial-pic {
         width: 10%;
         border-radius: 100%;
         margin: 20px;
-      }
-
-      .carousel-item {
+       
+    }
+    
+    .carousel-item {
         padding: 7% 15%;
-      }
+       
+    }
 
       #press {
         background-color: #ef8172;
@@ -124,10 +126,22 @@ p {
       /* Pricing Section */
 
       #pricing {
-        padding: /*100px*/ 20px;   /* i changed the 100px to 20px */
+        padding: 100px;
         text-align: center;
       }
 
-      .pricing-column {
+      .pricing-colum {
         padding: 3% 2%;
+      }
+
+      @media (max-width: 1028px) {
+        #title {
+          text-align: center;
+        }
+      
+        .title-image {
+          position: static;
+          transform: rotate(0);
+          width: 60%;
+        }
       }
